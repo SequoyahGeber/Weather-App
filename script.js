@@ -1,3 +1,5 @@
+//testing git commit
+
 // Global variables and arrays for storing data
 let data = {};
 let storedData = {};
