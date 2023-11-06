@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Weather</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body
+    id="body"
+    onload="display(), aliens(), selectClouds(), fillCurrentLocation()"
+  >
+    <header>
+      <div class="container">
+        <div class="left">
+          <h1>Your Simple Weather APP</h1>
+          <div>
+            <p>Today is: <span id="date">Date Goes Here</span></p>
+            <p>The Time is: <span id="time">Time Goes Here</span></p>
+          </div>
+        </div>
+        <div class="right">
+          <input
+            class="inputField"
+            id="location"
+            type="text"
+            placeholder="City,State,CountyCode"
+            required
+          />
+          <button class="button" id="locationButton">Set Location</button>
+          <p style="display: block">
+            Your Current Location is: <span id="currentLocation"></span>
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="left">
+        <h2>At A Glance</h2>
+
+        <div class="details">
+          <p id="temperature"></p>
+          <img class="icons" src="/images/thermometer.png" alt="" />
+        </div>
+        <div class="details">
+          <p id="humidity"></p>
+          <img src="/images/humidity.png" alt="" class="icons" />
+        </div>
+        <div class="details">
+          <p id="pressure"></p>
+          <img src="/images/pressure.png" alt="" class="icons" />
+        </div>
+        <div class="details">
+          <p id="windSpeed"></p>
+          <img class="icons" src="/images/windSpeed.png" alt="" />
+        </div>
+      </div>
+      <div id="right">
+        <h2>Other Weather Details</h2>
+        <div class="details">
+          <p id="clouds"></p>
+          <img id="cloudyness" class="icons" src="" alt="" />
+        </div>
+        <div class="details">
+          <p>The sun rises at: <span id="sunrise"></span></p>
+          <img src="/images/sunrise.png" alt="" />
+        </div>
+        <div class="details">
+          <p>The sun sets at: <span id="sunset"></span></p>
+          <img id="moonIcon" src="/images/sunset.png" alt="" />
+        </div>
+      </div>
+
+    </main>
+    <div id="checkWeather" class="buttonContainer">
+      <button class="button" onclick="checkWeather()">Refresh</button>
+    </div>
+    <footer>
+      <div class="left"><p>&copy;Sequoyah Geber 2023</p></div>
+      <div class="right">
+        <p>
+          Chance of aliens: <span id="aliens"></span
+          ><img class="icons" src="/images/aliens.png" alt="" />
+        </p>
+      </div>
+      <script src="script.js"></script>
+    </footer>
+  </body>
+</html>

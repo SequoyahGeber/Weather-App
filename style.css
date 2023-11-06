@@ -1,0 +1,125 @@
+body {
+  background-color: #282828;
+  color: #c0c0c0;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+header {
+  background-color: #334e68;
+  margin: 0;
+  padding: 1rem;
+}
+
+header.right {
+  text-align: center;
+}
+
+
+h1 {
+  margin: 0;
+  display: inline-block;
+}
+main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+div#checkWeather {
+  text-align: center;
+}
+div#left {
+  grid-column: 1;
+}
+div#right {
+  grid-column: 2;
+}
+#map {
+  height: 100vh;
+  filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+img {
+  width: 42px;
+  height: auto;
+  margin: 1rem;
+}
+img.icons {
+  height: 37px;
+  width: auto;
+  box-sizing: border-box;
+  margin: 0 1rem;
+}
+img#moonIcon {
+  height: 42px;
+  width: auto;
+}
+
+div.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+}
+
+footer div.right {
+  text-align: right;
+}
+
+/* CSS */
+.button {
+  background-color: #2d587f;
+  color: #d0d0d0;
+  border-radius: 24px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  padding: 1rem 1.5rem; /* Adjust padding to your preference */
+  font-size: 1.2rem;
+  width: 200px; /* Adjust width to your preference */
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover {
+  background: #43688b;
+  transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1); /* Add a transition for the transform property */
+}
+
+.button:hover {
+  box-shadow: 0 0 6px #4285f4; /* Adjust box-shadow color to your preference */
+  outline: none;
+}
+
+.inputField {
+  background-color: #326492;
+  color: #d0d0d0;
+  border-radius: 24px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  padding: 1rem 1.5rem; /* Adjust padding to your preference */
+  font-size: 1.2rem;
+  width: 200px; /* Adjust width to your preference */
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inputField:hover {
+  box-shadow: 0 0 6px #4285f4; /* Adjust box-shadow color to your preference */
+  outline: none;
+}
+@media only screen and (min-width: 1500px) {
+header {
+  text-align: center;
+}
+  main,
+  footer {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
