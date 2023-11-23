@@ -1,10 +1,14 @@
 //testing git commit
 
 // Global variables and arrays for storing data
-let data = {};
+let data = {}; 
 let storedData = {};
 let riseSet = [];
 let clouds;
+// this is good, this type of scoping will be obsolete when you start using Object Oriented code for everything
+// senior defs would prefer to keep the global scope as clean as possible, but for these programs its perfect.
+
+
 
 // Event listener for when the DOM is loaded
 document.addEventListener("DOMContentLoaded", function() {
@@ -61,7 +65,7 @@ function constructLink() {
 
   // Construct the weather data URL
   weatherLink = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=bdcebeea38d8e3dc9c3eaa3e7cc60c18";
-
+  // preparing a URL for posting to API is very common in a number of different programming languages
   console.log(weatherLink);
 }
 
@@ -230,6 +234,10 @@ function time() {
   document.getElementById("date").innerHTML = daysOfWeek[y] + ", " + months[x] + ", " + day;
   document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
 }
+
+// this is a great example of functional programming, it covers all the basis, and you did a good job commenting the code, and using a procedure approach
+// you should google procedural programming, this is a good example of it and you should save it so you have it for review in the future as you progress
+
 
 
 function fillCurrentLocation(){
